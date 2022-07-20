@@ -1,77 +1,20 @@
 <!DOCTYPE html>
-<html lang="jp">
-
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>Heards</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 
-
 <body>
-    <div class="keys">
-        <div data-key="a" class="key"></div>
-        <div data-key="b" class="key"></div>
-        <div data-key="c" class="key"></div>
-        <div data-key="d" class="key"></div>
-        <div data-key="e" class="key"></div>
-        <div data-key="f" class="key"></div>
-        <div data-key="g" class="key"></div>
-        <div data-key="h" class="key"></div>
-        <div data-key="i" class="key"></div>
-        <div data-key="j" class="key"></div>
-        <div data-key="k" class="key"></div>
-        <div data-key="l" class="key"></div>
-        <div data-key="m" class="key"></div>
-        <div data-key="n" class="key"></div>
-        <div data-key="o" class="key"></div>
-        <div data-key="p" class="key"></div>
-        <div data-key="q" class="key"></div>
-        <div data-key="r" class="key"></div>
-        <div data-key="s" class="key"></div>
-        <div data-key="t" class="key"></div>
-        <div data-key="u" class="key"></div>
-        <div data-key="v" class="key"></div>
-        <div data-key="w" class="key"></div>
-        <div data-key="x" class="key"></div>
-        <div data-key="y" class="key"></div>
-        <div data-key="z" class="key"></div>
-        <div data-key="1" class="key"></div>
-        <div data-key="2" class="key"></div>
-        <div data-key="3" class="key"></div>
-        <div data-key="4" class="key"></div>
-        <div data-key="5" class="key"></div>
-        <div data-key="6" class="key"></div>
-        <div data-key="7" class="key"></div>
-        <div data-key="8" class="key"></div>
-        <div data-key="9" class="key"></div>
-        <div data-key="0" class="key"></div>
-
-    </div>
-
-    <audio data-key="a" src="Baby.mp3"></audio>
-    <audio data-key="b" src="Chin.mp3"></audio>
-    <audio data-key="c" src="Cookie.mp3"></audio>
-    <audio data-key="d" src="Cooking.mp3"></audio>
-    <audio data-key="e" src="Eating.mp3"></audio>
-    <!--<audio data-key="f" src="Magic1.mp3" preload controls loop></audio>-->
-    <audio data-key="f" id="bgm1" preload controls loop>
-        <source src="Magic1.ogg" type="audio/ogg">
-        
+  <div class="container">
+    <!-- audioタグで再生   -->
+    <audio controls loop>
+      <source src="assets/Magic1.mp3" type="audio/mp3">
+      <source src="assets/Magic1.ogg" type="audio/ogg">
     </audio>
-    <audio data-key="g" src="Mist.mp3"></audio>
-    <audio data-key="h" src="Open.mp3"></audio>
-    <audio data-key="i" src="RailCrossing.mp3"></audio>
-    <audio data-key="j" src="Rain.mp3"></audio>
-    <audio data-key="k" src="Silen.mp3"></audio>
-    <audio data-key="l" src="Stones.mp3"></audio>
-    <audio data-key="m" src="Magic2.mp3"></audio>
-    <audio data-key="n" src="OpenBox.mp3"></audio>
-    <audio data-key="o" src="Secondhand.mp3"></audio>
-    <audio data-key="p" src="Toaster.mp3"></audio>
-    <audio data-key="q" src="Wash.mp3"></audio>
-
-    <script type="text/javascript" async="" src="Main.js"></script>
+  </div><!-- .container -->
+  <script src="index.js"></script>
 </body>
-
 </html>
+

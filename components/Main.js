@@ -5,7 +5,7 @@ const Magic1 = new Audio('../assets/Magic1.mp3');
 //const Magic2 = new Audio('../assets/Magic1.ogg');
 
 // 再生
-document.body.addEventListener('keydown',
+body.addEventListener('keydown',
 event => {
     if (event.key === 'v') {
        Magic1.play();
@@ -17,7 +17,7 @@ event => {
 });
 
 // 停止
-document.body.addEventListener('keyup',
+body.addEventListener('keyup',
 event => {
     if (event.key === 'v') {
        Magic1.pause();

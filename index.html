@@ -26,10 +26,41 @@
     <audio id="Eating" controls loop>
       <source src="assets/Eating.mp3" type="audio/mp3">
     </audio>
+    <audio id="Mist" controls loop>
+      <source src="assets/Mist.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Open" controls loop>
+      <source src="assets/Open.mp3" type="audio/mp3">
+    </audio>
+    <audio id="OpenBox" controls loop>
+      <source src="assets/OpenBox.mp3" type="audio/mp3">
+    </audio>
+    <audio id="RailCrossing" controls loop>
+      <source src="assets/RailCrossing.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Rain" controls loop>
+      <source src="assets/Rain.mp3" type="audio/mp3">
+    </audio>
+    <audio id="Secondhand" controls loop>
+      <source src="assets/Seconhand.mp3" type="audio/mp3">
+    </audio>
     
   </div>
   <!-- .container -->
   
-  <script></script>
+  <script>
+      const Magic1 = document.querySelector("#Magic1");       // <audio>
+    
+      document.addEventListener('keydown', playing);
+      
+      function playing(e) {
+           if(e.code === 'KeyA'){
+              Magic1.play();
+           }
+           else if(e.code === 'KeyB'){
+              Magic2.play();
+           }
+        }
+  </script>
 </body>
 </html>

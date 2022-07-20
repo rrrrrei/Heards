@@ -13,3 +13,11 @@ event => {
        Magic1.play();
     }
 });
+
+// 停止
+document.body.addEventListener('keyup',
+event => {
+    if (event.key === 'v') {
+       Magic1.pause();
+    }
+});

@@ -30,8 +30,8 @@
         <audio id="Mist" controls loop>
             <source src="assets/Mist.mp3" type="audio/mp3">
         </audio>
-        <audio id="Open" controls loop>
-            <source src="assets/Open.mp3" type="audio/mp3">
+        <audio id="Opening" controls loop>
+            <source src="assets/Opening.mp3" type="audio/mp3">
         </audio>
         <audio id="OpenBox" controls loop>
             <source src="assets/OpenBox.mp3" type="audio/mp3">
@@ -43,7 +43,7 @@
             <source src="assets/Rain.mp3" type="audio/mp3">
         </audio>
         <audio id="Secondhand" controls loop>
-            <source src="assets/Seconhand.mp3" type="audio/mp3">
+            <source src="assets/Secondhand.mp3" type="audio/mp3">
         </audio>
         <audio id="Siren" controls loop>
             <source src="assets/Siren.mp3" type="audio/mp3">
@@ -92,7 +92,33 @@
     <!-- .container -->
 
     <script>
-        const Magic1 = document.querySelector("#Magic1");       // <audio>
+        const Magic1 = document.querySelector("#Magic1");
+        const Magic2 = document.querySelector("#Magic2");
+        const Baby = document.querySelector("#Baby");
+        const Chin = document.querySelector("#Chin");
+        const Cookie = document.querySelector("#Cookie");
+        const Cooking = document.querySelector("#Cooking");
+        const Eating = document.querySelector("#Eating");
+        const Mist = document.querySelector("#Mist");
+        const Opening = document.querySelector("#Opening");
+        const OpenBox = document.querySelector("#OpenBox");
+        const RailCrossing = document.querySelector("#RailCrossing");
+        const Rain = document.querySelector("#Rain");
+        const Secondhand = document.querySelector("#Secondhand");
+        const Siren = document.querySelector("#Siren");
+        const Toaster = document.querySelector("#Toaster");
+        const Wash = document.querySelector("#Wash");
+      /*  const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+        const  = document.querySelector("#");
+               // <audio> */
 
         document.addEventListener('keydown', playing);
 
@@ -119,7 +145,7 @@
                 Mist.play();
             }
             else if (e.code === 'KeyI') {
-                Open.play();
+                Opening.play();
             }
             else if (e.code === 'KeyH') {
                 OpenBox.play();
@@ -145,70 +171,223 @@
             else if (e.code === 'KeyP') {
                 Wash.play();
             }
-          /*  else if (e.code === 'KeyQ') {
-              .play();
+            /*  else if (e.code === 'KeyQ') {
+                .play();
+              }
+              else if (e.code === 'KeyR') {
+                .play();
+              }
+              else if (e.code === 'KeyS') {
+                .play();
+              }
+              else if (e.code === 'KeyT') {
+                .play();
+              }
+              else if (e.code === 'KeyU') {
+                .play();
+              }
+              else if (e.code === 'KeyV') {
+                .play();
+              }
+              else if (e.code === 'KeyW') {
+                .play();
+              }
+              else if (e.code === 'KeyX') {
+                .play();
+              }
+              else if (e.code === 'KeyY') {
+                .play();
+              }
+              else if (e.code === 'KeyZ') {
+                .play();
+              }
+              else if (e.code === 'Key0') {
+                .play();
+              }
+              else if (e.code === 'Key1') {
+                .play();
+              }
+              else if (e.code === 'Key2') {
+                .play();
+              }
+              else if (e.code === 'Key3') {
+                .play();
+              }
+              else if (e.code === 'Key4') {
+                .play();
+              }
+              else if (e.code === 'Key5') {
+                .play();
+              }
+              else if (e.code === 'Key6') {
+                .play();
+              }
+              else if (e.code === 'Key7') {
+                .play();
+              }
+              else if (e.code === 'Key8') {
+                .play();
+              }
+              else if (e.code === 'Key9') {
+                .play();
+              }
+              else if (e.code === 'Key') {
+                .play();
+              } 
+              */
+        }
+
+        document.addEventListener('keyup', pausing);
+
+        function pausing(e) {
+            if (e.code === 'KeyA') {
+                Magic1.pause();
+                Magic1.currentTime = 0;
             }
-            else if (e.code === 'KeyR') {
-              .play();
+            else if (e.code === 'KeyB') {
+                Magic2.pause();
+                Magic2.currentTime = 0;
             }
-            else if (e.code === 'KeyS') {
-              .play();
+            else if (e.code === 'KeyC') {
+                Baby.pause();
+                Baby.currentTime = 0;
             }
-            else if (e.code === 'KeyT') {
-              .play();
+            else if (e.code === 'KeyD') {
+                Chin.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'KeyU') {
-              .play();
+            else if (e.code === 'KeyE') {
+                Cookie.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'KeyV') {
-              .play();
+            else if (e.code === 'KeyF') {
+                Cooking.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'KeyW') {
-              .play();
+            else if (e.code === 'KeyG') {
+                Mist.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'KeyX') {
-              .play();
+            else if (e.code === 'KeyI') {
+                Opening.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'KeyY') {
-              .play();
+            else if (e.code === 'KeyH') {
+                OpenBox.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'KeyZ') {
-              .play();
+            else if (e.code === 'KeyJ') {
+                RailCrossing.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'Key0') {
-              .play();
+            else if (e.code === 'KeyK') {
+                Rain.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'Key1') {
-              .play();
+            else if (e.code === 'KeyL') {
+                Secondhand.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'Key2') {
-              .play();
+            else if (e.code === 'KeyM') {
+                Siren.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'Key3') {
-              .play();
+            else if (e.code === 'KeyN') {
+                Stones.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'Key4') {
-              .play();
+            else if (e.code === 'KeyO') {
+                Toaster.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'Key5') {
-              .play();
+            else if (e.code === 'KeyP') {
+                Wash.pause();
+                currentTime = 0;
             }
-            else if (e.code === 'Key6') {
-              .play();
-            }
-            else if (e.code === 'Key7') {
-              .play();
-            }
-            else if (e.code === 'Key8') {
-              .play();
-            }
-            else if (e.code === 'Key9') {
-              .play();
-            }
-            else if (e.code === 'Key') {
-              .play();
-            } 
-            */
+/*  else if (e.code === 'KeyQ') {
+.pause();
+currentTime = 0;
+}
+else if (e.code === 'KeyR') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyS') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyT') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyU') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyV') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyW') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyX') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyY') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'KeyZ') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key0') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key1') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key2') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key3') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key4') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key5') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key6') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key7') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key8') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key9') {
+  .pause();
+  currentTime = 0;
+}
+else if (e.code === 'Key') {
+  .pause();
+  currentTime = 0;
+} */
         }
     </script>
 </body>

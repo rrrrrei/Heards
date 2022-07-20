@@ -1,66 +1,216 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="stylesheets/style.css">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
 
 <body>
-  <div class="container">
-    <!-- audioタグで再生   -->
-    <audio id="Magic1" controls loop>
-      <source src="assets/Magic1.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Magic2" controls loop>
-      <source src="assets/Magic2.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Baby" controls loop>
-      <source src="assets/Baby.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Chin" controls loop>
-      <source src="assets/Chin.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Cookie" controls loop>
-      <source src="assets/Cookie.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Eating" controls loop>
-      <source src="assets/Eating.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Mist" controls loop>
-      <source src="assets/Mist.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Open" controls loop>
-      <source src="assets/Open.mp3" type="audio/mp3">
-    </audio>
-    <audio id="OpenBox" controls loop>
-      <source src="assets/OpenBox.mp3" type="audio/mp3">
-    </audio>
-    <audio id="RailCrossing" controls loop>
-      <source src="assets/RailCrossing.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Rain" controls loop>
-      <source src="assets/Rain.mp3" type="audio/mp3">
-    </audio>
-    <audio id="Secondhand" controls loop>
-      <source src="assets/Seconhand.mp3" type="audio/mp3">
-    </audio>
-    
-  </div>
-  <!-- .container -->
-  
-  <script>
-      const Magic1 = document.querySelector("#Magic1");       // <audio>
-    
-      document.addEventListener('keydown', playing);
-      
-      function playing(e) {
-           if(e.code === 'KeyA'){
-              Magic1.play();
-           }
-           else if(e.code === 'KeyB'){
-              Magic2.play();
-           }
+    <div class="container">
+        <!-- audioタグで再生   -->
+        <audio id="Magic1" controls loop>
+            <source src="assets/Magic1.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Magic2" controls loop>
+            <source src="assets/Magic2.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Baby" controls loop>
+            <source src="assets/Baby.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Chin" controls loop>
+            <source src="assets/Chin.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Cookie" controls loop>
+            <source src="assets/Cookie.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Eating" controls loop>
+            <source src="assets/Eating.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Mist" controls loop>
+            <source src="assets/Mist.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Open" controls loop>
+            <source src="assets/Open.mp3" type="audio/mp3">
+        </audio>
+        <audio id="OpenBox" controls loop>
+            <source src="assets/OpenBox.mp3" type="audio/mp3">
+        </audio>
+        <audio id="RailCrossing" controls loop>
+            <source src="assets/RailCrossing.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Rain" controls loop>
+            <source src="assets/Rain.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Secondhand" controls loop>
+            <source src="assets/Seconhand.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Siren" controls loop>
+            <source src="assets/Siren.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Stones" controls loop>
+            <source src="assets/Stones.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Toaster" controls loop>
+            <source src="assets/Toaster.mp3" type="audio/mp3">
+        </audio>
+        <audio id="Wash" controls loop>
+            <source src="assets/Wash.mp3" type="audio/mp3">
+        </audio>
+        <!--<audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+        <audio id="" controls loop>
+            <source src="assets/.mp3" type="audio/mp3">
+        </audio>
+    -->
+    </div>
+    <!-- .container -->
+
+    <script>
+        const Magic1 = document.querySelector("#Magic1");       // <audio>
+
+        document.addEventListener('keydown', playing);
+
+        function playing(e) {
+            if (e.code === 'KeyA') {
+                Magic1.play();
+            }
+            else if (e.code === 'KeyB') {
+                Magic2.play();
+            }
+            else if (e.code === 'KeyC') {
+                Baby.play();
+            }
+            else if (e.code === 'KeyD') {
+                Chin.play();
+            }
+            else if (e.code === 'KeyE') {
+                Cookie.play();
+            }
+            else if (e.code === 'KeyF') {
+                Cooking.play();
+            }
+            else if (e.code === 'KeyG') {
+                Mist.play();
+            }
+            else if (e.code === 'KeyI') {
+                Open.play();
+            }
+            else if (e.code === 'KeyH') {
+                OpenBox.play();
+            }
+            else if (e.code === 'KeyJ') {
+                RailCrossing.play();
+            }
+            else if (e.code === 'KeyK') {
+                Rain.play();
+            }
+            else if (e.code === 'KeyL') {
+                Secondhand.play();
+            }
+            else if (e.code === 'KeyM') {
+                Siren.play();
+            }
+            else if (e.code === 'KeyN') {
+                Stones.play();
+            }
+            else if (e.code === 'KeyO') {
+                Toaster.play();
+            }
+            else if (e.code === 'KeyP') {
+                Wash.play();
+            }
+          /*  else if (e.code === 'KeyQ') {
+              .play();
+            }
+            else if (e.code === 'KeyR') {
+              .play();
+            }
+            else if (e.code === 'KeyS') {
+              .play();
+            }
+            else if (e.code === 'KeyT') {
+              .play();
+            }
+            else if (e.code === 'KeyU') {
+              .play();
+            }
+            else if (e.code === 'KeyV') {
+              .play();
+            }
+            else if (e.code === 'KeyW') {
+              .play();
+            }
+            else if (e.code === 'KeyX') {
+              .play();
+            }
+            else if (e.code === 'KeyY') {
+              .play();
+            }
+            else if (e.code === 'KeyZ') {
+              .play();
+            }
+            else if (e.code === 'Key0') {
+              .play();
+            }
+            else if (e.code === 'Key1') {
+              .play();
+            }
+            else if (e.code === 'Key2') {
+              .play();
+            }
+            else if (e.code === 'Key3') {
+              .play();
+            }
+            else if (e.code === 'Key4') {
+              .play();
+            }
+            else if (e.code === 'Key5') {
+              .play();
+            }
+            else if (e.code === 'Key6') {
+              .play();
+            }
+            else if (e.code === 'Key7') {
+              .play();
+            }
+            else if (e.code === 'Key8') {
+              .play();
+            }
+            else if (e.code === 'Key9') {
+              .play();
+            }
+            else if (e.code === 'Key') {
+              .play();
+            } 
+            */
         }
-  </script>
+    </script>
 </body>
+
 </html>

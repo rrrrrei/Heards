@@ -10,6 +10,7 @@ event => {
        Magic1.play();
        Magic1.currentTime = 0;
        Magic1.loop = true;
+       Magic1.volume = 0.5;
     }
 });
 

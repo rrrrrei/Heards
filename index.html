@@ -12,8 +12,8 @@
         <audio id="Magic1" controls loop>
             <source src="sounds/Magic1.mp3" type="audio/mp3">
         </audio>
-        <audio id="Magic2" controls loop>
-            <source src="sounds/Magic2.mp3" type="audio/mp3">
+        <audio id="Bird" controls loop>
+            <source src="sounds/Bird.mp3" type="audio/mp3">
         </audio>
         <audio id="Baby" controls loop>
             <source src="sounds/Baby.mp3" type="audio/mp3">
@@ -57,23 +57,23 @@
         <audio id="Wash" controls loop>
             <source src="sounds/Wash.mp3" type="audio/mp3">
         </audio>
-        <audio id="" controls loop>
-            <source src="sounds/.mp3" type="audio/mp3">
+        <audio id="Foorin" controls loop>
+            <source src="sounds/Foorin.mp3" type="audio/mp3">
         </audio>
-        <audio id="" controls loop>
-            <source src="sounds/.mp3" type="audio/mp3">
+        <audio id="Gerira" controls loop>
+            <source src="sounds/Gerira.mp3" type="audio/mp3">
         </audio>
-        <audio id="" controls loop>
-            <source src="sounds/.mp3" type="audio/mp3">
+        <audio id="Heart" controls loop>
+            <source src="sounds/Heart.mp3" type="audio/mp3">
         </audio>
-        <audio id="" controls loop>
-            <source src="sounds/.mp3" type="audio/mp3">
+        <audio id="Otohime" controls loop>
+            <source src="sounds/Otohime.mp3" type="audio/mp3">
         </audio>
-        <audio id="" controls loop>
-            <source src="sounds/.mp3" type="audio/mp3">
+        <audio id="Rain2" controls loop>
+            <source src="sounds/Rain2.mp3" type="audio/mp3">
         </audio>
-        <audio id="" controls loop>
-            <source src="sounds/.mp3" type="audio/mp3">
+        <audio id="Register" controls loop>
+            <source src="sounds/Register.mp3" type="audio/mp3">
         </audio>
         <audio id="" controls loop>
             <source src="sounds/.mp3" type="audio/mp3">
@@ -138,7 +138,7 @@
 
     <script>
         const Magic1 = document.querySelector("#Magic1");
-        const Magic2 = document.querySelector("#Magic2");
+        const Bird = document.querySelector("#Bird");
         const Baby = document.querySelector("#Baby");
         const Chin = document.querySelector("#Chin");
         const Cookie = document.querySelector("#Cookie");
@@ -153,13 +153,13 @@
         const Siren = document.querySelector("#Siren");
         const Toaster = document.querySelector("#Toaster");
         const Wash = document.querySelector("#Wash");
-        /*  const  = document.querySelector("#");
-          const  = document.querySelector("#");
-          const  = document.querySelector("#");
-          const  = document.querySelector("#");
-          const  = document.querySelector("#");
-          const  = document.querySelector("#");
-          const  = document.querySelector("#");
+        const Foorin = document.querySelector("#Foorin");
+        const Gerira = document.querySelector("#Gerira");
+        const Heart = document.querySelector("#Heart");
+        const Otohime = document.querySelector("#Otohime");
+        const Rain2 = document.querySelector("#Rain2");
+        const Register = document.querySelector("#Register");
+          /* const  = document.querySelector("#");
           const  = document.querySelector("#");
           const  = document.querySelector("#");
           const  = document.querySelector("#"); */
@@ -184,7 +184,7 @@
                 Magic1.play();
             }
             else if (e.code === 'KeyB') {
-                Magic2.play();
+                Bird.play();
             }
             else if (e.code === 'KeyC') {
                 Baby.play();
@@ -228,25 +228,25 @@
             else if (e.code === 'KeyP') {
                 Wash.play();
             }
-            /*  else if (e.code === 'KeyQ') {
-                .play();
-              }
-              else if (e.code === 'KeyR') {
-                .play();
-              }
-              else if (e.code === 'KeyS') {
-                .play();
-              }
-              else if (e.code === 'KeyT') {
-                .play();
-              }
-              else if (e.code === 'KeyU') {
-                .play();
-              }
-              else if (e.code === 'KeyV') {
-                .play();
-              }
-              else if (e.code === 'KeyW') {
+            else if (e.code === 'KeyQ') {
+                Foorin.play();
+            }
+            else if (e.code === 'KeyR') {
+                Gerira.play();
+            }
+            else if (e.code === 'KeyS') {
+                Heart.play();
+            }
+            else if (e.code === 'KeyT') {
+                Otohime.play();
+            }
+            else if (e.code === 'KeyU') {
+                Rain2.play();
+            }
+            else if (e.code === 'KeyV') {
+                Register.play();
+            }
+              /* else if (e.code === 'KeyW') {
                 .play();
               }
               else if (e.code === 'KeyX') {
@@ -298,8 +298,8 @@
                 Magic1.currentTime = 0;
             }
             else if (e.code === 'KeyB') {
-                Magic2.pause();
-                Magic2.currentTime = 0;
+                Bird.pause();
+                Bird.currentTime = 0;
             }
             else if (e.code === 'KeyC') {
                 Baby.pause();
@@ -357,31 +357,31 @@
                 Wash.pause();
                 Wash.currentTime = 0;
             }
-            /*  else if (e.code === 'KeyQ') {
-            .pause();
+            else if (e.code === 'KeyQ') {
+            Foorin.pause();
             currentTime = 0;
             }
             else if (e.code === 'KeyR') {
-              .pause();
+              Gerira.pause();
               currentTime = 0;
             }
             else if (e.code === 'KeyS') {
-              .pause();
+              Heart.pause();
               currentTime = 0;
             }
             else if (e.code === 'KeyT') {
-              .pause();
+              Otohime.pause();
               currentTime = 0;
             }
             else if (e.code === 'KeyU') {
-              .pause();
+              Rain2.pause();
               currentTime = 0;
             }
             else if (e.code === 'KeyV') {
-              .pause();
+              Register.pause();
               currentTime = 0;
             }
-            else if (e.code === 'KeyW') {
+            /*else if (e.code === 'KeyW') {
               .pause();
               currentTime = 0;
             }

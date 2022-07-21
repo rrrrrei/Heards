@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="set-container">
         <!-- audioタグで再生   -->
         <audio id="Magic1" controls loop>
             <source src="assets/Magic1.mp3" type="audio/mp3">
@@ -89,7 +89,20 @@
         </audio>
     -->
     </div>
-    <!-- .container -->
+    
+    <!-- その場の音入れるとこ -->
+    <div class="input-container">
+        <input type="file" id="bgm0">
+        <input type="file" id="bgm1">
+        <input type="file" id="bgm2">
+        <input type="file" id="bgm3">
+        <input type="file" id="bgm4">
+        <input type="file" id="bgm5">
+        <input type="file" id="bgm6">
+        <input type="file" id="bgm7">
+        <input type="file" id="bgm8">
+        <input type="file" id="bgm9">
+    </div>
 
     <script>
         const Magic1 = document.querySelector("#Magic1");
@@ -199,40 +212,7 @@
               else if (e.code === 'KeyY') {
                 .play();
               }
-              else if (e.code === 'KeyZ') {
-                .play();
-              }
-              else if (e.code === 'Key0') {
-                .play();
-              }
-              else if (e.code === 'Key1') {
-                .play();
-              }
-              else if (e.code === 'Key2') {
-                .play();
-              }
-              else if (e.code === 'Key3') {
-                .play();
-              }
-              else if (e.code === 'Key4') {
-                .play();
-              }
-              else if (e.code === 'Key5') {
-                .play();
-              }
-              else if (e.code === 'Key6') {
-                .play();
-              }
-              else if (e.code === 'Key7') {
-                .play();
-              }
-              else if (e.code === 'Key8') {
-                .play();
-              }
-              else if (e.code === 'Key9') {
-                .play();
-              }
-              else if (e.code === 'Key') {
+              else (e.code === 'KeyZ') {
                 .play();
               } 
               */
@@ -390,6 +370,52 @@ else if (e.code === 'Key') {
   currentTime = 0;
 } */
         }
+
+        /*if (e.code === 'Key0') {
+                .play();
+              }
+              else if (e.code === 'Key1') {
+                .play();
+              }
+              else if (e.code === 'Key2') {
+                .play();
+              }
+              else if (e.code === 'Key3') {
+                .play();
+              }
+              else if (e.code === 'Key4') {
+                .play();
+              }
+              else if (e.code === 'Key5') {
+                .play();
+              }
+              else if (e.code === 'Key6') {
+                .play();
+              }
+              else if (e.code === 'Key7') {
+                .play();
+              }
+              else if (e.code === 'Key8') {
+                .play();
+              }
+              else if (e.code === 'Key9') {
+                .play();
+              }
+              else if (e.code === 'Key') {
+                .play();
+              } */
+    </script>
+    
+    <script>
+        window.addEventListener('load', () => {
+        const f = document.getElementById('bgm0');
+        f.addEventListener('change', evt => {
+          const input = evt.target;
+          for (let i = 0; i < input.files.length; i++) {
+            console.log(input.files[i]);
+          }
+        });
+      });
     </script>
 </body>
 

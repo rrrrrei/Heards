@@ -9,6 +9,7 @@
 <body>
     <div class="set-container">
         <!-- audioタグで再生   -->
+        <!-- データの音量の調整必要 -->
         <audio id="Magic1" loop>
             <source src="sounds/Magic1.mp3" type="audio/mp3">
         </audio>
@@ -124,17 +125,29 @@
 
 
     <!--音声データ名差し替え-->
-        <div class="input-container">
-        <input type="file" name="bgm0" accept=".mp3">
-        <input type="file" name="bgm1" accept=".mp3">
-        <input type="file" name="bgm2" accept=".mp3">
-        <input type="file" name="bgm3" accept=".mp3">
-        <input type="file" name="bgm4" accept=".mp3">
-        <input type="file" name="bgm5" accept=".mp3">
-        <input type="file" name="bgm6" accept=".mp3">
-        <input type="file" name="bgm7" accept=".mp3">
-        <input type="file" name="bgm8" accept=".mp3">
-        <input type="file" name="bgm9" accept=".mp3">
+    <div class="input-container">
+        <form>
+            <input type="file" name="bgm0" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm1" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm2" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm3" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm4" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm5" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm6" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm7" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm8" accept=".mp3">
+            <button type="submit">送信する</button>
+            <input type="file" name="bgm9" accept=".mp3">
+            <button type="submit">送信する</button>
+        </form>
     </div>
 
     <script>
@@ -164,7 +177,7 @@
         const Kitaku = document.querySelector("#Kitaku");
         const Bus = document.querySelector("#Bus");
         const Fan = document.querySelector("#Fan");
-        const Suzumushi = document.querySelector("#Suzumushi"); 
+        const Suzumushi = document.querySelector("#Suzumushi");
 
         // <inputaudio>
         const bgm0 = document.querySelector("#bgm0");
@@ -251,48 +264,48 @@
             }
             else if (e.code === 'KeyW') {
                 Kitaku.play();
-              }
-              else if (e.code === 'KeyX') {
+            }
+            else if (e.code === 'KeyX') {
                 Bus.play();
-              }
-              else if (e.code === 'KeyY') {
+            }
+            else if (e.code === 'KeyY') {
                 Fan.play();
-              }
-              else if (e.code === 'KeyZ') {
+            }
+            else if (e.code === 'KeyZ') {
                 Suzumushi.play();
-              } 
-              
-              // <inputaudio>
-              else if (e.code === 'Key0') {
+            }
+
+            // <inputaudio>
+            else if (e.code === 'Key0') {
                 bgm0.play();
-              }
-              else if (e.code === 'Key1') {
+            }
+            else if (e.code === 'Key1') {
                 bgm1.play();
-              }
-              else if (e.code === 'Key2') {
+            }
+            else if (e.code === 'Key2') {
                 bgm2.play();
-              }
-              else if (e.code === 'Key3') {
+            }
+            else if (e.code === 'Key3') {
                 bgm3.play();
-              }
-              else if (e.code === 'Key4') {
+            }
+            else if (e.code === 'Key4') {
                 bgm4.play();
-              }
-              else if (e.code === 'Key5') {
+            }
+            else if (e.code === 'Key5') {
                 bgm5.play();
-              }
-              else if (e.code === 'Key6') {
+            }
+            else if (e.code === 'Key6') {
                 bgm6.play();
-              }
-              else if (e.code === 'Key7') {
+            }
+            else if (e.code === 'Key7') {
                 bgm7.play();
-              }
-              else if (e.code === 'Key8') {
+            }
+            else if (e.code === 'Key8') {
                 bgm8.play();
-              }
-              else if (e.code === 'Key9') {
-                bgm9.play(); 
-            } 
+            }
+            else if (e.code === 'Key9') {
+                bgm9.play();
+            }
         }
 
         document.addEventListener('keyup', pausing);
@@ -364,45 +377,45 @@
                 Wash.currentTime = 0;
             }
             else if (e.code === 'KeyQ') {
-            Foorin.pause();
-            currentTime = 0;
+                Foorin.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyR') {
-              Gerira.pause();
-              currentTime = 0;
+                Gerira.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyS') {
-              Heart.pause();
-              currentTime = 0;
+                Heart.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyT') {
-              Otohime.pause();
-              currentTime = 0;
+                Otohime.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyU') {
-              Rain2.pause();
-              currentTime = 0;
+                Rain2.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyV') {
-              Register.pause();
-              currentTime = 0;
+                Register.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyW') {
-              Kitaku.pause();
-              currentTime = 0;
+                Kitaku.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyX') {
-              Bus.pause();
-              currentTime = 0;
+                Bus.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyY') {
-              Fan.pause();
-              currentTime = 0;
+                Fan.pause();
+                currentTime = 0;
             }
             else if (e.code === 'KeyZ') {
-              Suzumushi.pause();
-              currentTime = 0;
-            } 
+                Suzumushi.pause();
+                currentTime = 0;
+            }
 
             // <inputaudio>
             else if (e.code === 'Key0') {
@@ -447,7 +460,7 @@
             }
         }
     </script>
-    
+
     <script>
         // 音声データアップロード
         window.addEventListener('load', () => {

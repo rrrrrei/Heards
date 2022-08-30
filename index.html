@@ -123,7 +123,8 @@
     </div>
 
 
-    <!--<div class="input-container">
+    <!--音声データ名差し替え-->
+        <div class="input-container">
         <input type="file" name="bgm0" accept=".mp3">
         <input type="file" name="bgm1" accept=".mp3">
         <input type="file" name="bgm2" accept=".mp3">
@@ -134,9 +135,10 @@
         <input type="file" name="bgm7" accept=".mp3">
         <input type="file" name="bgm8" accept=".mp3">
         <input type="file" name="bgm9" accept=".mp3">
-    </div> -->
+    </div>
 
     <script>
+        // <setaudio>
         const Magic1 = document.querySelector("#Magic1");
         const Bird = document.querySelector("#Bird");
         const Baby = document.querySelector("#Baby");
@@ -163,8 +165,8 @@
         const Bus = document.querySelector("#Bus");
         const Fan = document.querySelector("#Fan");
         const Suzumushi = document.querySelector("#Suzumushi"); 
-        // <setaudio> 
 
+        // <inputaudio>
         const bgm0 = document.querySelector("#bgm0");
         const bgm1 = document.querySelector("#bgm1");
         const bgm2 = document.querySelector("#bgm2");
@@ -175,11 +177,12 @@
         const bgm7 = document.querySelector("#bgm7");
         const bgm8 = document.querySelector("#bgm8");
         const bgm9 = document.querySelector("#bgm9");
-        // <inputaudio>
+
 
         document.addEventListener('keydown', playing);
 
         function playing(e) {
+            // <setaudio>
             if (e.code === 'KeyA') {
                 Magic1.play();
             }
@@ -259,6 +262,7 @@
                 Suzumushi.play();
               } 
               
+              // <inputaudio>
               else if (e.code === 'Key0') {
                 bgm0.play();
               }
@@ -294,6 +298,7 @@
         document.addEventListener('keyup', pausing);
 
         function pausing(e) {
+            // <setaudio>
             if (e.code === 'KeyA') {
                 Magic1.pause();
                 Magic1.currentTime = 0;
@@ -398,6 +403,8 @@
               Suzumushi.pause();
               currentTime = 0;
             } 
+
+            // <inputaudio>
             else if (e.code === 'Key0') {
                 bgm0.pause();
                 currentTime = 0;
@@ -440,8 +447,9 @@
             }
         }
     </script>
-
+    
     <script>
+        // 音声データアップロード
         window.addEventListener('load', () => {
             const f = document.getElementById('bgm0');
             f.addEventListener('change', evt => {

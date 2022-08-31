@@ -128,28 +128,37 @@
     <!-- name指定じゃなくて自動番号振り当てにしたい -->
     <div class="input-container">
         <form>
-            <input type="file" name="bgm0" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm1" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm2" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm3" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm4" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm5" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm6" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm7" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm8" accept=".mp3">
-            <button type="submit">送信する</button>
-            <input type="file" name="bgm9" accept=".mp3">
+            <input type="file" name="bgm" accept=".mp3">
             <button type="submit">送信する</button>
         </form>
     </div>
+
+    <script>
+        async function uploadFile() {
+            //creating form data object and append file into that form data
+        let formData = new FormData(); 
+        formData.append("file", fileupload.files[0]);
+            //network request using POST method of fetch
+        await fetch('PASTE_YOUR_URL_HERE', { 
+          method: "POST", 
+          body: formData
+        }); 
+        alert('You have successfully upload the file!');
+        }
+        </script>
+    
+        <script>
+            // 音声データアップロード
+            window.addEventListener('load', () => {
+                const f = document.getElementById('bgm0');
+                f.addEventListener('change', evt => {
+                    const input = evt.target;
+                    for (let i = 0; i < input.files.length; i++) {
+                        console.log(input.files[i]);
+                    }
+                });
+            });
+        </script>
 
     <script>
         // <setaudio>
@@ -461,19 +470,7 @@
             }
         }
     </script>
-
-    <script>
-        // 音声データアップロード
-        window.addEventListener('load', () => {
-            const f = document.getElementById('bgm0');
-            f.addEventListener('change', evt => {
-                const input = evt.target;
-                for (let i = 0; i < input.files.length; i++) {
-                    console.log(input.files[i]);
-                }
-            });
-        });
-    </script>
+    
 </body>
 
 </html>

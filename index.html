@@ -85,8 +85,8 @@
         <audio id="Bus" loop>
             <source src="sounds/Bus.mp3" type="audio/mp3">
         </audio>
-        <audio id="Fan" loop>
-            <source src="sounds/Fan.mp3" type="audio/mp3">
+        <audio id="Minmin" loop>
+            <source src="sounds/Minmin.mp3" type="audio/mp3">
         </audio>
         <audio id="Suzumushi" loop>
             <source src="sounds/Suzumushi.mp3" type="audio/mp3">
@@ -94,26 +94,26 @@
 
 
         <!-- その場の音入れるとこ -->
-        <audio id="bgm0" loop>
-            <source src="sounds/bgm0.mp3" type="audio/mp3">
+        <audio id="Rinrin" loop>
+            <source src="sounds/Rinrin.mp3" type="audio/mp3">
         </audio>
-        <audio id="bgm1" loop>
-            <source src="sounds/bgm1.mp3" type="audio/mp3">
+        <audio id="Kodomo" loop>
+            <source src="sounds/Kodomo.mp3" type="audio/mp3">
         </audio>
-        <audio id="bgm2" loop>
-            <source src="sounds/bgm2.mp3" type="audio/mp3">
+        <audio id="Fan" loop>
+            <source src="sounds/Fan.mp3" type="audio/mp3">
         </audio>
-        <audio id="bgm3" loop>
-            <source src="sounds/bgm3.mp3" type="audio/mp3">
+        <audio id="Rinrin2" loop>
+            <source src="sounds/Rinrin2.mp3" type="audio/mp3">
         </audio>
-        <audio id="bgm4" loop>
-            <source src="sounds/bgm4.mp3" type="audio/mp3">
+        <audio id="Karakara" loop>
+            <source src="sounds/Karakara.mp3" type="audio/mp3">
         </audio>
-        <audio id="bgm5" loop>
-            <source src="sounds/bgm5.mp3" type="audio/mp3">
+        <audio id="Key" loop>
+            <source src="sounds/Key.mp3" type="audio/mp3">
         </audio>
-        <audio id="bgm6" loop>
-            <source src="sounds/bgm6.mp3" type="audio/mp3">
+        <audio id="Ashioto" loop>
+            <source src="sounds/Ashioto.mp3" type="audio/mp3">
         </audio>
         <audio id="bgm7" loop>
             <source src="sounds/bgm7.mp3" type="audio/mp3">
@@ -165,17 +165,17 @@
         const Register = document.querySelector("#Register");
         const Kitaku = document.querySelector("#Kitaku");
         const Bus = document.querySelector("#Bus");
-        const Fan = document.querySelector("#Fan");
+        const Minmin = document.querySelector("#Minmin");
         const Suzumushi = document.querySelector("#Suzumushi");
 
         // <inputaudio>
-        const bgm0 = document.querySelector("#bgm0");
-        const bgm1 = document.querySelector("#bgm1");
-        const bgm2 = document.querySelector("#bgm2");
-        const bgm3 = document.querySelector("#bgm3");
-        const bgm4 = document.querySelector("#bgm4");
-        const bgm5 = document.querySelector("#bgm5");
-        const bgm6 = document.querySelector("#bgm6");
+        const Rinrin = document.querySelector("#Rinrin");
+        const Kodomo = document.querySelector("#Kodomo");
+        const Fan = document.querySelector("#Fan");
+        const Rinrin2 = document.querySelector("#Rinrin2");
+        const Karakara = document.querySelector("#Karakara");
+        const Key = document.querySelector("#Key");
+        const Ashioto = document.querySelector("#Ashioto");
         const bgm7 = document.querySelector("#bgm7");
         const bgm8 = document.querySelector("#bgm8");
         const bgm9 = document.querySelector("#bgm9");
@@ -197,7 +197,7 @@
             else if (e.code === 'KeyD') {
                 Chin.play();
             }
-            else if (e.code === 'KeyE') {
+            else if (e.code === 'KeyE') {//音量ここ基準
                 Cookie.play();
             }
             else if (e.code === 'KeyF') {
@@ -206,7 +206,7 @@
             else if (e.code === 'KeyG') {
                 Mist.play();
             }
-            else if (e.code === 'KeyI') {
+            else if (e.code === 'KeyI') {//音量大きめ
                 Opening.play();
             }
             else if (e.code === 'KeyH') {
@@ -218,7 +218,7 @@
             else if (e.code === 'KeyK') {
                 Rain.play();
             }
-            else if (e.code === 'KeyL') {
+            else if (e.code === 'KeyL') {//大きく
                 Secondhand.play();
             }
             else if (e.code === 'KeyM') {
@@ -227,38 +227,38 @@
             else if (e.code === 'KeyN') {
                 Stones.play();
             }
-            else if (e.code === 'KeyO') {
+            else if (e.code === 'KeyO') {//バタンギィだけ、音若干大きめに
                 Toaster.play();
             }
-            else if (e.code === 'KeyP') {
+            else if (e.code === 'KeyP') {//音少し大きく
                 Wash.play();
             }
-            else if (e.code === 'KeyQ') {
+            else if (e.code === 'KeyQ') {//音量小さく
                 Foorin.play();
             }
-            else if (e.code === 'KeyR') {
+            else if (e.code === 'KeyR') {//音量小さく
                 Gerira.play();
             }
             else if (e.code === 'KeyS') {
                 Heart.play();
             }
-            else if (e.code === 'KeyT') {
+            else if (e.code === 'KeyT') {//ピッからでいい
                 Otohime.play();
             }
-            else if (e.code === 'KeyU') {
+            else if (e.code === 'KeyU') {//若干音小さめでもいいかも
                 Rain2.play();
             }
             else if (e.code === 'KeyV') {
                 Register.play();
             }
-            else if (e.code === 'KeyW') {
+            else if (e.code === 'KeyW') {//階段上がるとこからでOK、足音と鍵音分けてもいいかも
                 Kitaku.play();
             }
             else if (e.code === 'KeyX') {
                 Bus.play();
             }
             else if (e.code === 'KeyY') {
-                Fan.play();
+                Minmin.play();
             }
             else if (e.code === 'KeyZ') {
                 Suzumushi.play();
@@ -266,25 +266,25 @@
 
             // <inputaudio>
             else if (e.code === 'Key0') {
-                bgm0.play();
+                Rinrin.play();
             }
             else if (e.code === 'Key1') {
-                bgm1.play();
+                Kodomo.play();
             }
             else if (e.code === 'Key2') {
-                bgm2.play();
+                Fan.play();
             }
             else if (e.code === 'Key3') {
-                bgm3.play();
+                Rinrin2.play();
             }
             else if (e.code === 'Key4') {
-                bgm4.play();
+                Karakara.play();
             }
             else if (e.code === 'Key5') {
-                bgm5.play();
+                Key.play();
             }
             else if (e.code === 'Key6') {
-                bgm6.play();
+                Ashioto.play();
             }
             else if (e.code === 'Key7') {
                 bgm7.play();
@@ -398,7 +398,7 @@
                 currentTime = 0;
             }
             else if (e.code === 'KeyY') {
-                Fan.pause();
+                Minmin.pause();
                 currentTime = 0;
             }
             else if (e.code === 'KeyZ') {
@@ -408,31 +408,31 @@
 
             // <inputaudio>
             else if (e.code === 'Key0') {
-                bgm0.pause();
+                Rinrin.pause();
                 currentTime = 0;
             }
             else if (e.code === 'Key1') {
-                bgm1.pause();
+                Kodomo.pause();
                 currentTime = 0;
             }
             else if (e.code === 'Key2') {
-                bgm2.pause();
+                Fan.pause();
                 currentTime = 0;
             }
             else if (e.code === 'Key3') {
-                bgm3.pause();
+                Rinrin2.pause();
                 currentTime = 0;
             }
             else if (e.code === 'Key4') {
-                bgm4.pause();
+                Karakara.pause();
                 currentTime = 0;
             }
             else if (e.code === 'Key5') {
-                bgm5.pause();
+                Key.pause();
                 currentTime = 0;
             }
             else if (e.code === 'Key6') {
-                bgm6.pause();
+                Ashioto.pause();
                 currentTime = 0;
             }
             else if (e.code === 'Key7') {
